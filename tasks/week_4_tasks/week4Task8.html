@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 4 - Task 8</title>
+    <link rel="stylesheet" href="../../CSS/style.css">
+    <style>
+
+        .hero-columns {
+            height: 30vh;
+            /* background-color: aquamarine; */
+            display: flex;
+            gap: 5px;
+            justify-content: center;
+            align-items: center;
+
+            & .hero-column {
+                height: 90%;
+                width: 32%;
+                background-color: rebeccapurple;
+            }
+
+            & .column-two {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                & .upper,
+                .lower {
+                    height: 49%;
+                    background-color: palevioletred;
+                }
+            }
+        }
+
+        .feature-columns {
+            height: 25vh;
+            /* background-color: rgb(27, 182, 130); */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+            & div {
+                width: 25%;
+                height: 95%;
+                margin: 0px 45px;
+                background-color: rgb(50, 27, 255);
+            }
+        }
+
+        .news-columns {
+            height: 15vh;
+            background-color: rgb(128, 124, 124);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            margin: 12px auto;
+
+            & div {
+                border-radius: 25px;
+                width: 25%;
+                height: 60%;
+                margin: 0px 50px;
+                background-color: rgb(168, 154, 154);
+            }
+        }
+
+        .reviews-columns {
+            height: 40vh;
+            /* background-color: rgb(58, 182, 27); */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &>div {
+                width: 22%;
+                height: 95%;
+                margin: 0px 25px;
+
+            }
+
+            & .column-one,
+            .column-two,
+            .column-three {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                & .upper,
+                .lower {
+                    height: 49.5%;
+                    background-color: rgb(252, 44, 44);
+                }
+            }
+
+            & .column-zero {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                background-color: rgba(2, 2, 2, 0.295);
+                text-align: center;
+                color: rgba(240, 248, 255, 0.918);
+
+                & h2 {
+                    background-color: black;
+                    border-radius: 10px;
+
+                }
+
+                & div {
+                    background-color: rgba(0, 0, 0, 0.123);
+                    padding: 12px;
+                    border-radius: 10px;
+                }
+            }
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Browse our categories</h1>
+    </header>
+
+    <div class="hero-columns">
+        <div class="column-one hero-column"></div>
+        <div class="column-two hero-column">
+            <div class="upper"></div>
+            <div class="lower"></div>
+        </div>
+        <div class="column-three hero-column"></div>
+    </div>
+
+    <div class="feature-columns">
+        <div class="column-one"></div>
+        <div class="column-two"></div>
+        <div class="column-three"></div>
+    </div>
+    <div class="news-columns">
+        <div class="column-one"></div>
+        <div class="column-two"></div>
+        <div class="column-three"></div>
+    </div>
+    <div class="reviews-columns">
+        <div class="column-zero">
+            <h2>Testimonials</h2>
+            <div>Abdur Rehman's testimony</div>
+            <div>Kiran Bukhari's testimony</div>
+            <div>David Bombal's testimony</div>
+            <div>Michael Renzi's testimony</div>
+        </div>
+        <div class="column-one">
+            <div class="upper"></div>
+            <div class="lower"></div>
+        </div>
+        <div class="column-two">
+            <div class="upper"></div>
+            <div class="lower"></div>
+        </div>
+        <div class="column-three">
+            <div class="upper"></div>
+            <div class="lower"></div>
+        </div>
+    </div>
+
+    <footer>Copyright &#169 2025&nbsp<a target="_blank" href="https://abdurcodes.github.io/landing_page_TOP/">Soft
+        Sols</a></footer>
+
+</body>
+
+</html>

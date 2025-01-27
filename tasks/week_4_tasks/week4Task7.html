@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 4 - Task 7</title>
+    <link rel="stylesheet" href="../../CSS/style.css">
+    <style>
+
+        nav {
+            background-color: lightskyblue;
+            height: 10vh;
+
+            & .links {
+                display: flex;
+                list-style: none;
+                gap: 2rem;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+            }
+        }
+
+
+        .heroArea{
+            height: 80vh;
+            display: flex;
+            gap: 12px;
+
+            & .main{
+                width: 70%;
+                background-color: green;
+                margin: 12px 0px;
+                display: flex;
+                gap: 12px;
+                flex-wrap: wrap;
+                padding: 73px;
+                overflow-y: scroll;
+
+
+                & .item {
+                    height: 180px;
+                    width: 230px;
+                    background-color: greenyellow;
+                    margin: 12px;
+                }
+            }
+            & .sideBar{
+                width: 30%;
+                background-color: orange;
+                margin: 12px 0px;
+            }
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="links">
+                <li><a href="">Home</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">Offers</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="heroArea">
+        <div class="main">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+        <div class="sideBar"></div>
+    </div>
+
+    <footer>Copyright &#169 2025&nbsp<a target="_blank" href="https://abdurcodes.github.io/landing_page_TOP/">Soft
+        Sols</a></footer>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 4 - Task 3</title>
+    <link rel="stylesheet" href="../../CSS/style.css">
+    <style>
+        body {
+            background-image: linear-gradient(yellow, green);
+        }
+
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-top: 1px solid rgb(116, 112, 112);
+            height: 90vh;
+        }
+
+        form {
+            width: max-content;
+            padding: 23px;
+            background-color: wheat;
+
+            & .form-items {
+                margin: 12px 0px;
+                display: flex;
+
+                & label {
+                    margin-right: auto;
+                }
+            }
+        }
+
+        input[type="submit"],
+        input[type="button"] {
+            padding: 5px;
+            width: 90px;
+        }
+
+
+        /* responsive design code */
+        @media screen and (max-width: 768px) {
+            h1 {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Centering a Login Form</h1>
+    <section>
+        <form action="#">
+            <fieldset>
+                <legend>Login in</legend>
+                <div class="form-items">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username">
+                </div>
+                <div class="form-items">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password">
+                </div>
+                <div class="form-items">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Remember me</label>
+                </div>
+                <div class="form-items">
+                    <input type="submit" value="Submit">
+                    <input type="button" value="Sign up">
+                </div>
+            </fieldset>
+        </form>
+    </section>
+    <footer>Copyright &#169 2025&nbsp<a target="_blank" href="https://abdurcodes.github.io/landing_page_TOP/">Soft
+            Sols</a></footer>
+</body>
+
+</html>

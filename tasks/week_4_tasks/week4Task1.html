@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 4 - Task 1</title>
+    <link rel="stylesheet" href="../../CSS/style.css">
+    <style>
+        .bodyText {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            font-size: 3rem;
+            text-align: center;
+            background-image: linear-gradient(red, blue, green);
+            
+
+            & p:nth-child(2) {
+                display: none;
+            }
+
+        }
+
+
+
+        /* responsive design code */
+        @media screen and (max-width: 768px) {
+
+            nav {
+                height: 100%;
+                padding: 12px;
+
+                & .links {
+                    flex-direction: column;
+                }
+            }
+
+            .bodyText {
+                & p:nth-child(1) {
+                    display: none;
+                }
+                & p:nth-child(2) {
+                    display: block;
+                }
+
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Responsive Navigation Bar</h1>
+    <header>
+        <nav>
+            <ul class="links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Offers</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="bodyText">
+        <p>This is responsive navigation bar on desktop.</p>
+        <p>This is responsive navigation bar on mobile device.</p>
+    </div>
+
+    <footer>Copyright &#169 2025&nbsp<a target="_blank" href="https://abdurcodes.github.io/landing_page_TOP/">Soft
+            Sols</a></footer>
+
+</body>
+
+</html>

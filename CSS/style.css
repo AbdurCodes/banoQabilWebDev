@@ -4,9 +4,7 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: antiquewhite;
-}
+
 
 a {
     text-decoration: none;
@@ -14,6 +12,21 @@ a {
 
     &:hover {
         color: rebeccapurple;
+    }
+}
+
+nav {
+    background-color: lightskyblue;
+    height: 10vh;
+    margin: 9px 0px 20px 0px;
+
+    & .links {
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
     }
 }
 
@@ -83,15 +96,13 @@ table {
     text-align: center;
 }
 
-.footer {
-    background-color: black;
-    padding: 35px;
-    color: wheat;
-    text-align: center;
-
-    & p {
-        margin-bottom: 5px;
-    }
+footer {
+    height: 10vh;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(240, 248, 255, 0.918);
 
     & a {
         text-decoration: none;
@@ -100,8 +111,6 @@ table {
 
         &:hover {
             color: aquamarine;
-            background-color: inherit;
-
         }
     }
 }
