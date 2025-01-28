@@ -7,14 +7,20 @@
     <title>Week 4 - Task 8</title>
     <link rel="stylesheet" href="../../CSS/style.css">
     <style>
+        section {
+            border-top: 1px solid grey;
+        }
 
         .hero-columns {
             height: 30vh;
-            /* background-color: aquamarine; */
             display: flex;
             gap: 5px;
             justify-content: center;
             align-items: center;
+
+            & h3 {
+                display: none;
+            }
 
             & .hero-column {
                 height: 90%;
@@ -42,6 +48,9 @@
             justify-content: center;
             align-items: center;
 
+            & h3 {
+                display: none;
+            }
 
             & div {
                 width: 25%;
@@ -60,6 +69,10 @@
             width: 80%;
             margin: 12px auto;
 
+            & h3 {
+                display: none;
+            }
+
             & div {
                 border-radius: 25px;
                 width: 25%;
@@ -75,6 +88,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
+
+            & h3 {
+                display: none;
+            }
 
             &>div {
                 width: 22%;
@@ -119,7 +136,77 @@
             }
         }
 
-        
+        /* responsive design code */
+        @media screen and (max-width: 768px) {
+
+            h1 {
+                font-size: 1.3rem;
+            }
+
+            .hero-columns {
+                flex-direction: column;
+                height: 100vh;
+
+                & h3 {
+                    display: block;
+                    margin-top: 25px;
+                }
+
+                & .hero-column {
+                    width: 95%;
+                    background-color: rebeccapurple;
+                }
+
+            }
+
+            .feature-columns {
+                height: 100vh;
+                flex-direction: column;
+                gap: 5px;
+
+                & h3 {
+                    display: block;
+                    margin-top: 25px;
+                }
+
+                & div {
+                    width: 95%;
+                }
+            }
+
+            .news-columns {
+                height: 70vh;
+                gap: 10px;
+                flex-direction: column;
+                padding: 7px 7px 37px 7px;
+                width: 100%;
+
+                & h3 {
+                    display: block;
+                    margin-top: 25px;
+                }
+
+                & div {
+                    width: 95%;
+                }
+            }
+
+            .reviews-columns {
+                height: 200vh;
+                flex-direction: column;
+
+                & h3 {
+                    display: block;
+                    margin-top: 25px;
+                }
+
+                &>div {
+                    width: 95%;
+                    margin: 10px 0px;
+                }
+            }
+
+        }
     </style>
 </head>
 
@@ -128,49 +215,58 @@
         <h1>Browse our categories</h1>
     </header>
 
-    <div class="hero-columns">
-        <div class="column-one hero-column"></div>
-        <div class="column-two hero-column">
-            <div class="upper"></div>
-            <div class="lower"></div>
+    <section>
+        <div class="hero-columns">
+            <h3>Hero Columns</h3>
+            <div class="column-one hero-column"></div>
+            <div class="column-two hero-column">
+                <div class="upper"></div>
+                <div class="lower"></div>
+            </div>
+            <div class="column-three hero-column"></div>
         </div>
-        <div class="column-three hero-column"></div>
-    </div>
 
-    <div class="feature-columns">
-        <div class="column-one"></div>
-        <div class="column-two"></div>
-        <div class="column-three"></div>
-    </div>
-    <div class="news-columns">
-        <div class="column-one"></div>
-        <div class="column-two"></div>
-        <div class="column-three"></div>
-    </div>
-    <div class="reviews-columns">
-        <div class="column-zero">
-            <h2>Testimonials</h2>
-            <div>Abdur Rehman's testimony</div>
-            <div>Kiran Bukhari's testimony</div>
-            <div>David Bombal's testimony</div>
-            <div>Michael Renzi's testimony</div>
+        <div class="feature-columns">
+            <h3>Feature Columns</h3>
+            <div class="column-one"></div>
+            <div class="column-two"></div>
+            <div class="column-three"></div>
         </div>
-        <div class="column-one">
-            <div class="upper"></div>
-            <div class="lower"></div>
+
+        <div class="news-columns">
+            <h3>News Columns</h3>
+            <div class="column-one"></div>
+            <div class="column-two"></div>
+            <div class="column-three"></div>
         </div>
-        <div class="column-two">
-            <div class="upper"></div>
-            <div class="lower"></div>
+
+        <div class="reviews-columns">
+            <h3>Reviews Columns</h3>
+            <div class="column-zero">
+                <h2>Testimonials</h2>
+                <div>Abdur Rehman's testimony</div>
+                <div>Kiran Bukhari's testimony</div>
+                <div>David Bombal's testimony</div>
+                <div>Michael Renzi's testimony</div>
+            </div>
+            <div class="column-one">
+                <div class="upper"></div>
+                <div class="lower"></div>
+            </div>
+            <div class="column-two">
+                <div class="upper"></div>
+                <div class="lower"></div>
+            </div>
+            <div class="column-three">
+                <div class="upper"></div>
+                <div class="lower"></div>
+            </div>
         </div>
-        <div class="column-three">
-            <div class="upper"></div>
-            <div class="lower"></div>
-        </div>
-    </div>
+
+    </section>
 
     <footer>Copyright &#169 2025&nbsp<a target="_blank" href="https://abdurcodes.github.io/landing_page_TOP/">Soft
-        Sols</a></footer>
+            Sols</a></footer>
 
 </body>
 
