@@ -1,40 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Week 4 - Task 5</title>
     <link rel="stylesheet" href="../../CSS/style.css">
     <style>
-
-        header{
+        header {
             background-color: lightskyblue;
             height: 10vh;
         }
-        .body{
+
+        .body {
             height: 80vh;
-            & .upperDivs{
+
+            & .upperDivs {
                 height: 60%;
                 display: flex;
                 justify-content: center;
                 gap: 8px;
-                & .main-content{
+
+                & .main-content {
                     width: 40vw;
                     margin: 8px 0px;
                     background-color: rgb(67, 223, 36);
                 }
-                & .sideBar{
+
+                & .sideBar {
                     width: 20vw;
                     margin: 8px 0px;
                     background-color: rebeccapurple;
                 }
             }
-            & .lowerDivs{
+
+            & .lowerDivs {
                 height: 40%;
                 display: flex;
                 justify-content: center;
                 gap: 8px;
-                & .twin{
+
+                & .twin {
                     width: 30vw;
                     background-color: orange;
                     margin: 0px 0px 8px 0px;
@@ -42,8 +48,55 @@
             }
         }
 
+
+        @media screen and (max-width: 768px) {
+
+            .body {
+                height: auto;
+
+                & .upperDivs {
+                    height: 100vh;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 1px;
+                    margin: 18px 0px;
+
+                    & .main-content {
+                        width: 90%;
+                        height: 100%;
+                        margin: 8px 0px;
+                        background-color: rgb(67, 223, 36);
+                    }
+
+                    & .sideBar {
+                        width: 90%;
+                        height: 100%;
+                        margin: 8px 0px;
+                        background-color: rebeccapurple;
+                    }
+                }
+
+                & .lowerDivs {
+                    height: 100vh;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 8px;
+                    margin: 18px 0px;
+
+                    & .twin {
+                        width: 90%;
+                        height: 100%;
+                    }
+                }
+            }
+
+
+
+
+        }
     </style>
 </head>
+
 <body>
     <section>
         <header></header>
@@ -57,9 +110,10 @@
                 <div class="twin"></div>
             </div>
         </div>
-        
+
         <footer>Copyright &#169 2025&nbsp<a target="_blank" href="https://abdurcodes.github.io/landing_page_TOP/">Soft
-            Sols</a></footer>
+                Sols</a></footer>
     </section>
 </body>
+
 </html>
