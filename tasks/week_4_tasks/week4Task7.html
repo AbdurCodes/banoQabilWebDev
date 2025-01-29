@@ -7,28 +7,17 @@
     <title>Week 4 - Task 7</title>
     <link rel="stylesheet" href="../../CSS/style.css">
     <style>
-
-        nav {
-            background-color: lightskyblue;
-            height: 10vh;
-
-            & .links {
-                display: flex;
-                list-style: none;
-                gap: 2rem;
-                justify-content: center;
-                align-items: center;
-                height: 100%;
-            }
-        }
-
-
-        .heroArea{
+        .heroArea {
             height: 80vh;
             display: flex;
             gap: 12px;
 
-            & .main{
+            & h3 {
+                text-align: center;
+                display: none;
+            }
+
+            & .main {
                 width: 70%;
                 background-color: green;
                 margin: 12px 0px;
@@ -46,7 +35,8 @@
                     margin: 12px;
                 }
             }
-            & .sideBar{
+
+            & .sideBar {
                 width: 30%;
                 background-color: orange;
                 margin: 12px 0px;
@@ -54,6 +44,49 @@
         }
 
 
+
+        /* responsive code */
+        @media screen and (max-width: 768px) {
+
+            nav {
+                height: min-content;
+
+                & .links {
+                    padding: 20px;
+                    flex-direction: column;
+                }
+            }
+
+
+            .heroArea {
+                height: auto;
+                flex-direction: column;
+                /* text-align: center; */
+                gap: 5px;
+
+                & h3 {
+                    display: block;
+                    margin-top: 15px;
+                }
+
+                & .main {
+                    width: 100%;
+                    gap: 6px;
+                    padding: 10px;
+
+                    & .item {
+                        height: 200px;
+                        width: 100%;
+                    }
+                }
+
+                & .sideBar {
+                    width: 100%;
+                    height: 80vh;
+                    margin: 12px 0px;
+                }
+            }
+        }
     </style>
 </head>
 
@@ -70,7 +103,9 @@
         </nav>
     </header>
     <div class="heroArea">
+        <h3>Hero Area</h3>
         <div class="main">
+            <h3>Main Content</h3>
             <div class="item"></div>
             <div class="item"></div>
             <div class="item"></div>
@@ -83,11 +118,13 @@
             <div class="item"></div>
             <div class="item"></div>
         </div>
-        <div class="sideBar"></div>
+        <div class="sideBar">
+            <h3>Sidebar</h3>
+        </div>
     </div>
 
     <footer>Copyright &#169 2025&nbsp<a target="_blank" href="https://abdurcodes.github.io/landing_page_TOP/">Soft
-        Sols</a></footer>
+            Sols</a></footer>
 </body>
 
 </html>
