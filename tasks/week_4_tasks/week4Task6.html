@@ -7,27 +7,12 @@
     <title>Week 4 - Task 6</title>
     <link rel="stylesheet" href="../../CSS/style.css">
     <style>
-
         .logo {
             text-align: center;
             background-color: antiquewhite;
-            height: 15vh;
+            height: max-content;
         }
 
-        nav {
-            background-color: lightskyblue;
-            height: 10vh;
-            margin: 9px 0px 20px 0px;
-
-            & .links {
-                display: flex;
-                list-style: none;
-                gap: 2rem;
-                justify-content: center;
-                align-items: center;
-                height: 100%;
-            }
-        }
 
         .feature {
             height: 30vh;
@@ -50,6 +35,39 @@
         }
 
 
+        @media screen and (max-width: 768px) {
+            nav {
+                height: min-content;
+
+                & .links {
+                    padding: 20px;
+                    flex-direction: column;
+                }
+            }
+
+
+            .feature {
+                height: 90vh;
+            }
+
+
+            .columns {
+                height: auto;
+                background-color: rgb(104, 85, 85);
+                flex-direction: column;
+                gap: 12px;
+                align-items: center;
+                padding: 9px;
+
+                & div {
+                    width: 90%;
+                    height: 300px;
+                    margin: 20px 0px;
+                    background-color: rgb(184, 171, 171);
+                }
+            }
+
+        }
     </style>
 </head>
 
@@ -76,7 +94,7 @@
     </div>
 
     <footer>Copyright &#169 2025&nbsp<a target="_blank" href="https://abdurcodes.github.io/landing_page_TOP/">Soft
-        Sols</a></footer>
+            Sols</a></footer>
 </body>
 
 </html>
